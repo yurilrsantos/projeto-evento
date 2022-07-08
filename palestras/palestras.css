@@ -150,7 +150,7 @@ main {
 .box-r .next li {
   list-style: none;
   box-sizing: border-box;
-  height: 190px;
+  height: 200px;
   margin: 15px 0;
   transition: .5s;
 }
