@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Eventos</title>
+    <link rel="stylesheet" href="adicionar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../componentes/header.js" type="text/javascript" defer></script>
+    <script src="../componentes/footer.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <ys-header></ys-header>
+    <main>
+        <div class="body">
+            <div class="form">
+                <div class="container">
+                    <div class="title">Adicionar novo Evento</div>
+                    <form action="#">
+                        <div class="detalhes">
+                            <div class="input-box">
+                                <span class="details">Nome do Organizador</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Local do Evento</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Data do Evento</span>
+                                <input type="date" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Horário do Evento</span>
+                                <input type="time" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Titulo do Evento</span>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Introdução do Evento</span>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="input-box-img">
+                            <span class="details">Imagem do Evento</span>
+                            <input type="file" required>
+                        </div>
+                        <div class="button">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <ys-footer></ys-footer>
+</body>
+</html>

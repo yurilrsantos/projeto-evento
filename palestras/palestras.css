@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+  height: 100%;
+  justify-content: center;
+  padding: 10px;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, aqua, blue);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.box-l {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.box-l .container {
+  background-color: white;
+  padding: 40px;
+  transition: .5s;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.box-l .container .nxt {
+  border: 1px solid aqua;
+  border-radius: 20px;
+}
+
+.box-l img{
+  border: 2px solid blue;
+  border-radius: 20px;
+  padding: 5px;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+}
+
+.dest {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.box-l h1 {
+  background: linear-gradient(135deg, aqua, blue);
+  color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  letter-spacing: 1px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.box-l h2 {
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.box-l h3{
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.box-l h4{
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.box-l p{
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.box-r {
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.box-r .container {
+  background-color: white;
+  padding: 40px;
+  transition: .5s;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.box-r .title {
+  background: linear-gradient(135deg, aqua, blue);
+  color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+  letter-spacing: 1px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.box-r .events {
+  
+  border: 1px solid aqua;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.box-r .next li {
+  list-style: none;
+  box-sizing: border-box;
+  height: 190px;
+  margin: 15px 0;
+  transition: .5s;
+}
+
+.box-r .next li:hover {
+  transform: scale(1.015);
+}
+
+.box-r .next li .time {
+  position: relative;
+  padding: 20px;
+  background: blue;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: .5s;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.box-r .next li:hover .time {
+  background: aqua;
+}
+
+.box-r .next li .time h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+  font-size: 40px;
+  transition: .5s;
+}
+
+.box-r .next li:hover .time h2 {
+  font-size: 50px;
+}
+
+.box-r .next li .time h2 span {
+  font-size: 20px;
+  transition: .5s;
+}
+
+.box-r .next li:hover .time h2 span {
+  font-size: 25px;
+}
+
+.box-r .next li .details {
+  padding: 10px;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+  transition: .5s;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.box-r .next li .details h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 900;
+  background: blue;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+.box-r .next li .details h4 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 800;
+  background: #ccc;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.box-r .next li .details p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  background: #ccc;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+}
